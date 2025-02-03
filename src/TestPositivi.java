@@ -6,18 +6,17 @@ public class TestPositivi {
         do {
             Scanner in = new Scanner(System.in);
             System.out.println("Inserisci un numero positivo: ");
-
-        try {
-            int num = in.nextInt();
-            if (num == 0) {
-                break;
+            try {
+                int num = in.nextInt();
+                if (num == 0) {
+                    break;
+                }
+                numeriPositivi.addNumero(num);
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+            } finally {
+                System.out.println(numeriPositivi);
             }
-            numeriPositivi.addNumero(num);
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        } finally {
-            System.out.println(numeriPositivi);
-        }
         } while (true);
     }
 }
