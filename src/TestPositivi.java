@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class TestPositivi {
     public static void main(String[] args) {
         NumeriPositivi numeriPositivi = new NumeriPositivi();
@@ -12,6 +11,12 @@ public class TestPositivi {
                     break;
                 }
                 numeriPositivi.addNumero(num);
+            }catch (NumeroEscluso e) {
+                System.err.println(e.getMessage());
+            }catch (IntervalloException e) {
+                System.err.println(e.getMessage());
+            }catch (NegativeException e) {
+                System.err.println(e.getMessage());
             } catch (Exception e) {
                 System.err.println(e.getMessage());
             }
