@@ -16,7 +16,7 @@ public class Main {
             numeriPositivi.addNumero(num);
         } catch (NegativeException e) {
             System.err.println(e.getMessage());
-        } catch (InputMismatchException e) {
+        } catch (Exception e) {
             System.err.println(e.getMessage());
         } finally {
             System.out.println(numeriPositivi);
