@@ -1,4 +1,4 @@
-public class IntervalloException extends RuntimeException {
+public class IntervalloException extends NumberFormatException {
     public IntervalloException(String message) {
         super(message);
     }
