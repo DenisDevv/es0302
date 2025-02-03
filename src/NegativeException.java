@@ -1,4 +1,4 @@
-public class NegativeException extends NumberFormatException {
+public class NegativeException extends EccezioneNumerica {
     public NegativeException(String message) {
         super(message);
     }

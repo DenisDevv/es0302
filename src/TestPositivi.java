@@ -14,7 +14,8 @@ public class TestPositivi {
                 numeriPositivi.addNumero(num);
             } catch (Exception e) {
                 System.err.println(e.getMessage());
-            } finally {
+            }
+            finally {
                 System.out.println(numeriPositivi);
             }
         } while (true);

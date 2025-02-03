@@ -1,4 +1,4 @@
-public class IntervalloException extends NumberFormatException {
+public class IntervalloException extends EccezioneNumerica {
     public IntervalloException(String message) {
         super(message);
     }
