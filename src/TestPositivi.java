@@ -8,13 +8,11 @@ public class TestPositivi {
             System.out.println("Inserisci un numero positivo: ");
 
         try {
-            Integer num = in.nextInt();
+            int num = in.nextInt();
             if (num == 0) {
                 break;
             }
             numeriPositivi.addNumero(num);
-        } catch (NegativeException e) {
-            System.err.println(e.getMessage());
         } catch (Exception e) {
             System.err.println(e.getMessage());
         } finally {
